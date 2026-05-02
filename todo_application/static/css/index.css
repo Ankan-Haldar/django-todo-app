@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+/* FULL PAGE CENTER */
+.signup-login {
+  background-color: #0f1f37;
+  width: 100%;
+  min-height: 100vh;   /* ✅ fix */
+  font-size: 24px;
+  color: #fff;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;  /* ✅ spacing */
+}
+
+/* CARD */
+.signup-box,
+.signup-box1 {
+  background-color: #ffffff30;
+  width: 100%;
+  max-width: 520px;   /* ✅ responsive */
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+/* HEADINGS */
+.heading {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* LABEL */
+b {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* INPUT */
+.inp {
+  margin: 10px 0;
+  height: 50px;
+  width: 100%;   /* ✅ responsive */
+  border-radius: 10px;
+  border: none;
+  padding-left: 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ffffff30;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+}
+
+.inp::placeholder {
+  color: #ffffffa5;
+}
+
+/* BUTTON */
+.submit-button {
+  margin-top: 15px;
+  width: 100%;   /* ✅ responsive */
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #252525;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #ffff00bc;
+  color: #000;
+}
+
+/* LINE */
+.line {
+  margin: 20px 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff50;
+}
+
+/* LINK */
+.anc {
+  display: block;
+  text-align: center;   /* ✅ fixed */
+  text-decoration: none;
+  color: #ffff00bc;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* HEADER FLEX */
+.heads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ICON */
+.anca {
+  font-size: 22px;
+}
+
+/* HOVER */
+a:hover {
+  color: #ffff00bc;
+}
+
+/* COMPLETED TASK */
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .inp {
+    font-size: 14px;
+  }
+}
